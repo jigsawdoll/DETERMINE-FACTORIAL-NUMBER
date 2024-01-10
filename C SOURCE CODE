@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+
+/* i will create a function recursife  */
+int fact(int insert){
+	if(insert > 1){
+		return insert*fact(insert - 1);
+	} else{
+		return 1;
+	}
+}
+
+int main(){
+	
+	int insert; //remember! i calling the variabel from fact functions (int data type)
+	
+	printf("\n +================================+ \n");
+	printf(" |   (-  FACTORIALS NUMBERS -)    | \n");
+	printf(" +================================+ \n\n");
+	
+	printf(" Please Enter ur Number: "); scanf("%i", &insert); puts("\n");
+	
+	printf(" Results %i = %i \n", insert, fact(insert));
+	
+	return 0;
+}
